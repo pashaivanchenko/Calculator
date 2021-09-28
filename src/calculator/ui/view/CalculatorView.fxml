@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox fx:id="vBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.ui.view.CalculatorController">
+   <children>
+      <StackPane prefHeight="100.0" prefWidth="300.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d3dfe3" height="70.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+            <Text fx:id="output" />
+         </children>
+         <padding>
+            <Insets top="5.0" />
+         </padding>
+      </StackPane>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#history" prefHeight="40.0" prefWidth="90.0" text="History" />
+            <Button mnemonicParsing="false" onAction="#backspace" prefHeight="40.0" prefWidth="90.0" text="Back" />
+            <Button mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="40.0" text="C" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="7" />
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="8" />
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="9" />
+            <Button mnemonicParsing="false" onAction="#calc" prefHeight="40.0" prefWidth="40.0" text="/" />
+            <Button mnemonicParsing="false" onAction="#calc" prefHeight="40.0" prefWidth="40.0" text="*" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="4" />
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="5" />
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="6" />
+            <Button mnemonicParsing="false" onAction="#calc" prefHeight="40.0" prefWidth="40.0" text="Sqrt" />
+            <Button mnemonicParsing="false" onAction="#calc" prefHeight="40.0" prefWidth="40.0" text="Pow" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="1" />
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="2" />
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="3" />
+            <Button mnemonicParsing="false" onAction="#calc" prefHeight="40.0" prefWidth="40.0" text="+" />
+            <Button mnemonicParsing="false" onAction="#calc" prefHeight="40.0" prefWidth="40.0" text="-" />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="90.0" text="0" />
+            <Button mnemonicParsing="false" onAction="#value" prefHeight="40.0" prefWidth="40.0" text="." />
+            <Button mnemonicParsing="false" onAction="#calc" prefHeight="40.0" prefWidth="90.0" text="=" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
